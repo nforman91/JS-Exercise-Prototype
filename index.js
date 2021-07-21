@@ -74,7 +74,7 @@ kevin.poop();
 
 console.log(kevin.stomach);
 
-console.log(kevin.toString());
+console.log('task 1:', kevin.toString());
 
 /*
   TASK 2
@@ -98,14 +98,14 @@ function Car(model, milesPerGallon) {
 }
 
 Car.prototype.fill = function(gallons){
-  this.tank.push(gallons);
+  this.tank = this.tank + gallons;
 }
 
-// const car = new Car('Subaru', 30);
+const car = new Car('Subaru', 30);
 
-// car.fill(5);
+car.fill(5);
 
-// console.log('task2:', car.tank);
+console.log('task 2:', car.tank);
 
 /*
   TASK 3
@@ -126,7 +126,7 @@ Baby.prototype.play = function(){
 
 const baby = new Baby('John', '6 months', 'rattle');
 
-console.log(baby.play());
+console.log('task 3:', baby.play());
 
 
 
